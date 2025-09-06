@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Cal.Pro.exe" version="0.1.0.27" publicKeyToken="47d1b7a35d6fe6d2" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="calc.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Cal.Pro" version="0.1.0.3" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Cal.Pro.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BouncyCastle.Crypto.dll" size="3316968">
+      <assemblyIdentity name="BouncyCastle.Crypto" version="1.9.0.0" publicKeyToken="0E99375E54769942" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5Rch3AZH9IOLGrxZK9lf2MuSRxbopk+D1LlHgh+h+kI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Cal.Pro.exe" size="684488">
+      <assemblyIdentity name="Cal.Pro" version="0.1.0.3" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RdHAnAlxr8ChfaqDDzxeqLFuX+c62qH0lQF4b6EH1Z8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Web.WebView2.Core.dll" size="649792">
+      <assemblyIdentity name="Microsoft.Web.WebView2.Core" version="1.0.3405.78" publicKeyToken="2A8AB48044D2601E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1oT589kf58jiEPrlWjNVM9SYIpdKWUE5k6LODBDRGp4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Web.WebView2.WinForms.dll" size="39016">
+      <assemblyIdentity name="Microsoft.Web.WebView2.WinForms" version="1.0.3405.78" publicKeyToken="2A8AB48044D2601E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>50Oh94wkxPqOImdWCI2TIZsqCVUJUveAlUxheMDa6yA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Web.WebView2.Wpf.dll" size="82008">
+      <assemblyIdentity name="Microsoft.Web.WebView2.Wpf" version="1.0.3405.78" publicKeyToken="2A8AB48044D2601E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>baokBpiKrOnWWj+7kvMTJT/zBanU7AG9X9FmsMHEnP0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Security.Cryptography.ProtectedData.dll" size="21288">
+      <assemblyIdentity name="System.Security.Cryptography.ProtectedData" version="9.0.0.8" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uvpqQ5S6P9SW7WsR/IE2Pu09YNXHNl8hxIsz+gTVZgY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Cal.Pro.exe.config" size="232">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0a2WumEwVqDu5PNj3rr2emKXUaSA6X+soiXYdvApNYA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="calc.ico" size="6091">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rdokvjbYv6xYtkS3kx5Zv5tmSmTk3VwpFntaLdi9LMA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-arm64\native\WebView2Loader.dll" size="145512">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qn3pMxeou5QALZ5fq+fu1o52Ks2gSn7jgZowMD+j924=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x64\native\WebView2Loader.dll" size="159336">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ribW73yPa1M1herXYxi2y/jvrXCAZJU6MS3Zf0dhukU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="runtimes\win-x86\native\WebView2Loader.dll" size="120384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tYk4hO3W9vxoSa5n6+Do2UQyID+fDkSFiAELfcsAZrw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <fileAssociation extension=".bjk" description="bjk" progid="bjk" defaultIcon="calc.ico" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
+  <fileAssociation extension=".calc" description="calculator" progid="calc" defaultIcon="calc.ico" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
+  <fileAssociation extension=".formulae" description="formulae" progid="f" defaultIcon="calc.ico" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
+  <fileAssociation extension=".p" description="p" progid="p" defaultIcon="calc.ico" xmlns="urn:schemas-microsoft-com:clickonce.v1" />
+<publisherIdentity name="CN=ACERNITRO11\mrbar" issuerKeyHash="ea462ada6ca3db66334524aaab195151286961c3" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ANT1jcinOZmujK4wMVbAkg9rtayrkfLmIR6z7CFsdz8=</DigestValue></Reference></SignedInfo><SignatureValue>Rk2zD29pBQhCPt6V4DKivGqAfRsCQrS8IZioCDJHVa17ZuqcSMGce3XTaFAi/1Mv0P422cEKDKI0ridbthlp40dPSi/JCi/mH+kkvAop1exnIJGa+TY0qvSoS3UuEnKvICI4kkdMFmfTFSmD8EJBUpIltyH/5cDszNrmK5e2S+k=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>nR1LA0PzZfO585LRhduO7V5ubLK5ynPqRANhFGRzQX6T98HvSUj1SzH0JcCGxbwcv6IoXEjykJcU9RybBhb1NVw6RDQCgUi3UzoJ6gOp2j+vFs1MPnhvEJDdnOQJf5M736UuqU77jH1fxn0Jw25vOlOHAQ1oJJnVOdHSl0kPhb0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3f776c21ecb31e21e6f291abacb56b0f92c0563130ae8cae9939a7c88df5d400" Description="" Url=""><as:assemblyIdentity name="Cal.Pro.exe" version="0.1.0.27" publicKeyToken="47d1b7a35d6fe6d2" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ACERNITRO11\mrbar</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>tY00dU3M8bZ+kLYob+WLqoIQfnE52QT7PEQ4uKHH12Q=</DigestValue></Reference></SignedInfo><SignatureValue>DcCQEpxfJGYWdkjAbZ3z/59aHgdzDuW2/rbGyVXb7kw6t+jyogzTTOY4+BbZawj9ibiuJONINiL5Iux0BYJUxZyyfV1I8sFvZgs8u0G6PWxc4TpLAmUrRspfYOGzzfrXBvT67oH5AxhU9vkAIUKND9HHf2OnvXNioTwoGSou+ZI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>nR1LA0PzZfO585LRhduO7V5ubLK5ynPqRANhFGRzQX6T98HvSUj1SzH0JcCGxbwcv6IoXEjykJcU9RybBhb1NVw6RDQCgUi3UzoJ6gOp2j+vFs1MPnhvEJDdnOQJf5M736UuqU77jH1fxn0Jw25vOlOHAQ1oJJnVOdHSl0kPhb0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQZ6k8oZCcYIJBMP3jlH+9IjANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDHiIAQQBDAEUAUgBOAEkAVABSAE8AMQAxAFwAbQByAGIAYQByMB4XDTI1MDkwNDEyMzQyNFoXDTI2MDkwNDE4MzQyNFowLTErMCkGA1UEAx4iAEEAQwBFAFIATgBJAFQAUgBPADEAMQBcAG0AcgBiAGEAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAnR1LA0PzZfO585LRhduO7V5ubLK5ynPqRANhFGRzQX6T98HvSUj1SzH0JcCGxbwcv6IoXEjykJcU9RybBhb1NVw6RDQCgUi3UzoJ6gOp2j+vFs1MPnhvEJDdnOQJf5M736UuqU77jH1fxn0Jw25vOlOHAQ1oJJnVOdHSl0kPhb0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQAlVVKVBOGk2BtKD2gIlUJ0Efv4ugZgG3on+/X0KBin0dI2SyLa5hXVXGRxtI2NuvefwJpmbPOXnE9otDZeDg1uGU2vjk8kHs4ZYv6U3xG88sH6o42Vb73PkiXhzntZf+evnkn2tbh03SdqhdpxHc6hCGtGhP6zxJkYWkfCGH9Abw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
